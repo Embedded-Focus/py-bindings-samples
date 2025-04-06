@@ -1,0 +1,8 @@
+---
+services:
+  sandbox:
+    build:
+      context: .
+      dockerfile: Dockerfile.sandbox
+    command: tail -f /dev/null
+    init: true
